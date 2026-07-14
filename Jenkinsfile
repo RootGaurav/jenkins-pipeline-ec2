@@ -63,7 +63,7 @@ pipeline {
             steps {
                 sh '''
                 aws autoscaling start-instance-refresh \
-                    --auto-scaling-group-name nginx-asg
+                    --auto-scaling-group-name nginx-ec2-asg
                 '''
             }
         }
